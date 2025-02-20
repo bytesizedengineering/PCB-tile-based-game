@@ -4,10 +4,6 @@
 	(generator_version "8.0")
 	(uuid "e9c75cdf-ac60-4dfd-938a-dba48adb224f")
 	(paper "A4")
-	(title_block
-		(title "PCB Tile Game")
-		(rev "0.1")
-	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
@@ -3486,6 +3482,7 @@
 	)
 	(label "SPARE_5"
 		(at 21.59 71.12 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3496,6 +3493,7 @@
 	)
 	(label "SIDE_4"
 		(at 74.93 58.42 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3506,6 +3504,7 @@
 	)
 	(label "SPARE_1"
 		(at 74.93 50.8 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3516,6 +3515,7 @@
 	)
 	(label "UPDI"
 		(at 74.93 35.56 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3526,6 +3526,7 @@
 	)
 	(label "SPARE_6b"
 		(at 74.93 40.64 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3536,6 +3537,7 @@
 	)
 	(label "SIDE_5"
 		(at 220.98 34.29 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3546,6 +3548,7 @@
 	)
 	(label "SPARE_6a"
 		(at 74.93 38.1 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3556,6 +3559,7 @@
 	)
 	(label "SIDE_5"
 		(at 74.93 43.18 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3566,6 +3570,7 @@
 	)
 	(label "SPARE_6b"
 		(at 220.98 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3576,6 +3581,7 @@
 	)
 	(label "SIDE_1"
 		(at 74.93 48.26 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3586,6 +3592,7 @@
 	)
 	(label "LED"
 		(at 74.93 53.34 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3596,6 +3603,7 @@
 	)
 	(label "SIDE_2"
 		(at 74.93 63.5 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3606,6 +3614,7 @@
 	)
 	(label "UPDI"
 		(at 88.9 41.91 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3616,6 +3625,7 @@
 	)
 	(label "SIDE_3"
 		(at 180.34 34.29 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3626,6 +3636,7 @@
 	)
 	(label "SIDE_4"
 		(at 180.34 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3636,6 +3647,7 @@
 	)
 	(label "SPARE_4b"
 		(at 21.59 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3646,6 +3658,7 @@
 	)
 	(label "SIDE_1"
 		(at 140.97 34.29 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3656,6 +3669,7 @@
 	)
 	(label "UPDI"
 		(at 140.97 31.75 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3666,6 +3680,7 @@
 	)
 	(label "LED_OUT_1"
 		(at 281.94 111.76 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3676,6 +3691,7 @@
 	)
 	(label "SPARE_2b"
 		(at 140.97 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3686,6 +3702,7 @@
 	)
 	(label "LED"
 		(at 24.13 111.76 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3696,6 +3713,7 @@
 	)
 	(label "SIDE_2"
 		(at 140.97 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3706,6 +3724,7 @@
 	)
 	(label "SPARE_4b"
 		(at 180.34 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3716,6 +3735,7 @@
 	)
 	(label "SIDE_6"
 		(at 220.98 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3726,6 +3746,7 @@
 	)
 	(label "SPARE_2b"
 		(at 74.93 73.66 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3736,6 +3757,7 @@
 	)
 	(label "SPARE_1"
 		(at 140.97 36.83 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3746,6 +3768,7 @@
 	)
 	(label "SPARE_4a"
 		(at 180.34 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3756,6 +3779,7 @@
 	)
 	(label "UPDI"
 		(at 180.34 31.75 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3766,6 +3790,7 @@
 	)
 	(label "SPARE_3"
 		(at 180.34 36.83 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3776,6 +3801,7 @@
 	)
 	(label "SPARE_2a"
 		(at 140.97 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3786,6 +3812,7 @@
 	)
 	(label "SPARE_2a"
 		(at 74.93 76.2 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3796,6 +3823,7 @@
 	)
 	(label "LED_OUT_1"
 		(at 33.02 142.24 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3806,6 +3834,7 @@
 	)
 	(label "SPARE_6a"
 		(at 220.98 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3816,6 +3845,7 @@
 	)
 	(label "SPARE_3"
 		(at 21.59 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3826,6 +3856,7 @@
 	)
 	(label "UPDI"
 		(at 100.33 34.29 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3836,6 +3867,7 @@
 	)
 	(label "UPDI"
 		(at 220.98 31.75 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3846,6 +3878,7 @@
 	)
 	(label "SIDE_3"
 		(at 74.93 60.96 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3856,6 +3889,7 @@
 	)
 	(label "SPARE_5"
 		(at 220.98 36.83 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3866,6 +3900,7 @@
 	)
 	(label "SPARE_4a"
 		(at 21.59 66.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3876,6 +3911,7 @@
 	)
 	(label "SIDE_6"
 		(at 74.93 45.72 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

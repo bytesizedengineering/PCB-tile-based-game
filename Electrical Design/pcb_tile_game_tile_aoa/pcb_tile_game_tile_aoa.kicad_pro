@@ -504,7 +504,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "aoa.gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

@@ -504,7 +504,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "ssa.gerbers",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

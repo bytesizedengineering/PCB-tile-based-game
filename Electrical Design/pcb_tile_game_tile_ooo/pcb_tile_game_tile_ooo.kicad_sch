@@ -4023,7 +4023,6 @@
 	)
 	(label "RX_J1"
 		(at 140.97 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4034,7 +4033,6 @@
 	)
 	(label "TX_J5"
 		(at 21.59 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4045,7 +4043,6 @@
 	)
 	(label "RX_J3"
 		(at 74.93 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4056,7 +4053,6 @@
 	)
 	(label "DATA_J4"
 		(at 21.59 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4067,7 +4063,6 @@
 	)
 	(label "TX_J1"
 		(at 74.93 45.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4078,7 +4073,6 @@
 	)
 	(label "UPDI"
 		(at 74.93 35.56 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4089,7 +4083,6 @@
 	)
 	(label "RX_J6"
 		(at 74.93 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4100,7 +4093,6 @@
 	)
 	(label "DATA_J5"
 		(at 220.98 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4109,9 +4101,8 @@
 		)
 		(uuid "267c3501-d2f0-48ce-814a-ad252b7eb719")
 	)
-	(label "LED_J1-J4"
+	(label "LED_J4-J1"
 		(at 21.59 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4122,7 +4113,6 @@
 	)
 	(label "TX_J6"
 		(at 74.93 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4133,7 +4123,6 @@
 	)
 	(label "DATA_J5"
 		(at 21.59 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4144,7 +4133,6 @@
 	)
 	(label "RX_J6"
 		(at 220.98 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4155,7 +4143,6 @@
 	)
 	(label "RX_J5"
 		(at 21.59 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4166,7 +4153,6 @@
 	)
 	(label "DATA_J1"
 		(at 74.93 48.26 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4175,9 +4161,8 @@
 		)
 		(uuid "344d36d2-ffe0-4ca1-8f3a-6ee2c0095660")
 	)
-	(label "LED_J3-J6"
+	(label "LED_J6-J3"
 		(at 74.93 53.34 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4188,7 +4173,6 @@
 	)
 	(label "DATA_J2"
 		(at 74.93 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4199,7 +4183,6 @@
 	)
 	(label "UPDI"
 		(at 88.9 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4210,7 +4193,6 @@
 	)
 	(label "DATA_J3"
 		(at 180.34 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4221,7 +4203,6 @@
 	)
 	(label "DATA_J4"
 		(at 180.34 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4232,7 +4213,6 @@
 	)
 	(label "RX_J4"
 		(at 21.59 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4243,7 +4223,6 @@
 	)
 	(label "DATA_J1"
 		(at 140.97 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4254,7 +4233,6 @@
 	)
 	(label "RX_J2"
 		(at 140.97 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4263,9 +4241,8 @@
 		)
 		(uuid "6deba22a-5c0f-452a-bb21-e50bf477eedc")
 	)
-	(label "LED_J3-J6"
+	(label "LED_J6-J3"
 		(at 22.86 170.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4276,7 +4253,6 @@
 	)
 	(label "DATA_J2"
 		(at 140.97 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4285,9 +4261,8 @@
 		)
 		(uuid "76d4d423-f0bf-4c1e-bf7b-35e6d21cf7da")
 	)
-	(label "LED_J2-J5"
+	(label "LED_J5-J2"
 		(at 21.59 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4298,7 +4273,6 @@
 	)
 	(label "RX_J4"
 		(at 180.34 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4309,7 +4283,6 @@
 	)
 	(label "DATA_J6"
 		(at 220.98 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4320,7 +4293,6 @@
 	)
 	(label "RX_J2"
 		(at 74.93 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4329,9 +4301,8 @@
 		)
 		(uuid "841aa8c4-87c7-48f2-9b0b-4ad573d5f1e2")
 	)
-	(label "LED_J2-J5"
+	(label "LED_J5-J2"
 		(at 21.59 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4342,7 +4313,6 @@
 	)
 	(label "TX_J1"
 		(at 140.97 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4353,7 +4323,6 @@
 	)
 	(label "TX_J4"
 		(at 180.34 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4364,7 +4333,6 @@
 	)
 	(label "TX_J3"
 		(at 180.34 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4375,7 +4343,6 @@
 	)
 	(label "RX_J3"
 		(at 180.34 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4386,7 +4353,6 @@
 	)
 	(label "TX_J2"
 		(at 140.97 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4397,7 +4363,6 @@
 	)
 	(label "RX_J1"
 		(at 74.93 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4406,9 +4371,8 @@
 		)
 		(uuid "c28ad9ae-22e5-4303-8080-8104046ecdbd")
 	)
-	(label "LED_J1-J4"
+	(label "LED_J4-J1"
 		(at 74.93 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4419,7 +4383,6 @@
 	)
 	(label "TX_J2"
 		(at 74.93 76.2 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4430,7 +4393,6 @@
 	)
 	(label "TX_J6"
 		(at 220.98 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4441,7 +4403,6 @@
 	)
 	(label "TX_J3"
 		(at 74.93 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4452,7 +4413,6 @@
 	)
 	(label "UPDI"
 		(at 100.33 27.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4463,7 +4423,6 @@
 	)
 	(label "DATA_J3"
 		(at 74.93 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4474,7 +4433,6 @@
 	)
 	(label "TX_J5"
 		(at 220.98 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4485,7 +4443,6 @@
 	)
 	(label "TX_J4"
 		(at 74.93 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4496,7 +4453,6 @@
 	)
 	(label "RX_J5"
 		(at 220.98 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4507,7 +4463,6 @@
 	)
 	(label "DATA_J6"
 		(at 74.93 40.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

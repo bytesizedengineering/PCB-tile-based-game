@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "kicad-keyboard-parts")(type "KiCad")(uri "H:/Drive/KiCad/Library/kicad-keyboard-parts.pretty")(options "KiCad")(descr ""))
+  (lib (name "ProjectLibrary")(type "KiCad")(uri "${KIPRJMOD}/ProjectLibrary.pretty")(options "")(descr ""))
+)

@@ -2,30 +2,30 @@
 
 // Uncomment only one of these to select the tile type
 //#define TILE_TYPE_AAA
-//#define TILE_TYPE_AOA
+#define TILE_TYPE_AOA
 //#define TILE_TYPE_OOO
 //#define TILE_TYPE_SOS
-#define TILE_TYPE_SSA
+//#define TILE_TYPE_SSA
 
 // Structures
 struct Connector {
-  const char* name;
-  uint8_t pin_red;
-  uint8_t pin_green;
-  uint8_t pin_blue;
+  const char* name; // This stores the PCB connector name J1, J3, etc. 
+  uint8_t pin_red; // This stores which MCU pin is connected to pin 2 on the connector
+  uint8_t pin_green; // This stores which MCU pin is connected to pin 3 on the connector
+  uint8_t pin_blue; // This stores which MCU pin is connected to pin 4 on the connector
 };
 struct Path {
-  int sideA;
-  int sideB;
-  int ledPin;
-  int numLEDs;
-  tinyNeoPixel pixelPath;
+  int sideA; // This stores which connector is considered side A (J1, J5, etc)
+  int sideB; // This stores which connector is considered side B (J1, J5, etc)
+  int ledPin; // This stores which MCU pin controls the neopixels
+  int numLEDs; // This stores how many neopixels total are in the path
+  tinyNeoPixel pixelPath; // neopixel instance 
 
   // Runtime animation state
-  int animStep = 0;
-  bool active = false;
-  bool direction = true; // true = sideA → sideB
-  uint32_t color = 0;
+  int animStep = 0; // This stores how many pixels are currently lit up during an animation
+  bool active = false; // This stores whether or not the path is currently lit up
+  bool direction = true; // This stores which side has color data present, also which direction the animation needs to go. True = sideA → sideB
+  uint32_t color = 0; // 32 bit color that will be shown on the LEDs when animated
 };
 struct Tile {
   Path path1;
@@ -46,7 +46,7 @@ struct Tile {
 // Global variables
 Connector connectors[] = {
   {"", 0, 0, 0},  // Dummy to make indexing start at 1
-  {"J1", PIN_PA4, PIN_PA5, PIN_PA6},
+  {"J1", PIN_PA4, PIN_PA5, PIN_PA6}, // This stores which MCU pin is connected to pins 2,3, and 4 on the connector
   {"J2", PIN_PB7, PIN_PB6, PIN_PB5},
   {"J3", PIN_PB3, PIN_PB2, PIN_PB1},
   {"J4", PIN_PB0, PIN_PC0, PIN_PC1},
@@ -54,8 +54,8 @@ Connector connectors[] = {
   {"J6", PIN_PA1, PIN_PA2, PIN_PA3},
 };
 
-Tile tile;
-unsigned long lastPathUpdate = 0;
+Tile tile; // This is the top level variable to access everything that goes on within the tile
+unsigned long lastPathUpdate = 0; // This stores how long it's been since the last time each path was updated
 
 void setup() {  
   for (int i = 1; i <= 6; i++) {
@@ -135,6 +135,8 @@ void animatePath(tinyNeoPixel &path, int animStep, int numLEDs, bool sideAtoSide
 }
 
 uint32_t readConnectorColor(const Connector& conn) {
+
+
   // Read each pin (they're pulled up, so LOW means active)
   bool red   = !digitalRead(conn.pin_red);
   bool green = !digitalRead(conn.pin_green);
@@ -158,50 +160,62 @@ uint32_t readConnectorColor(const Connector& conn) {
 }
 
 void updatePath(Path& path, const Connector* connectors) {
-  uint32_t colorA = readConnectorColor(connectors[path.sideA]);
-  uint32_t colorB = readConnectorColor(connectors[path.sideB]);
+  uint32_t colorA = 0;
+  uint32_t colorB = 0;
 
-  bool sideA_active = (colorA != 0);
-  bool sideB_active = (colorB != 0);
+  // Set colorA and colorB, but be careful not to try and read pins that are already set to OUTPUT!!!!
+  if (path.active) { // One of the sides has already been set as an OUTPUT so it shouldn't be evaluated for color data
+    if (path.direction) { // Side A has color
+      colorA = readConnectorColor(connectors[path.sideA]); //Only read the side that is an input, not the side that's an output      
+    }
+    else { // Side B has color
+      colorB = readConnectorColor(connectors[path.sideB]); //Only read the side that is an input, not the side that's an output      
+    }
+  }
+  else { // No active colors detected. It's safe to read both sides
+    colorA = readConnectorColor(connectors[path.sideA]); //Only read the side that is an input, not the side that's an output
+    colorB = readConnectorColor(connectors[path.sideB]); //Only read the side that is an input, not the side that's an output
+  }
 
-  if(sideA_active && !sideB_active) {
-    path.direction = true;
-    path.color = colorA;
-    path.active = true;
-    // Mirror to sideB
-    setConnectorOutput(connectors[path.sideB], colorA);
+  if(colorA && !colorB) {
+    path.direction = true; 
+    path.color = colorA;    
+        
     setConnectorInput(connectors[path.sideA]); // Make sure sideA stays input
-  }
-  else if(sideB_active && !sideA_active) {
-    path.direction = false;
-    path.color = colorB;
     path.active = true;
-    // Mirror to sideA
-    setConnectorOutput(connectors[path.sideA], colorB);
+  }  
+  else if(colorB && !colorA) {
+    path.direction = false;
+    path.color = colorB;        
     setConnectorInput(connectors[path.sideB]);
+    path.active = true;
   }
-  else if (sideA_active && sideB_active) {
-    // Optional: prioritize sideB or keep previous direction
-    // if (!path.active) {
-    //   path.direction = true; // Default choice if both active and not animating
-    // }
-    // path.color = colorA; // or blend colors, or pick based on logic
-    // path.active = true;
+  else if (colorA && colorB) {
+    // Need to deal with this condition
+    // 
   }
-  else {
+  else { // No color data is present on either side of path
     // Clear path and reset
-    path.pixelPath.clear(); path.pixelPath.show();
-    path.active = false;
+    path.pixelPath.clear(); path.pixelPath.show();    
     path.animStep = 0;
     // Set both sides to input
     setConnectorInput(connectors[path.sideA]);
     setConnectorInput(connectors[path.sideB]);
-    return;
+    path.active = false;
+    return; // no need to evaluate the rest of this function because this path is not active
   }
 
-  if (path.animStep <= path.numLEDs) {
+  if (path.active && path.animStep <= path.numLEDs) { //If the path is active, animate animStep number of LEDs in the direction and color established above
     animatePath(path.pixelPath, path.animStep, path.numLEDs, path.direction, path.color);
-    path.animStep++;
+    path.animStep++; // Increment the number of LEDs to animate for the next go around
+    if (path.animStep > path.numLEDs) {
+      // Animation finished, now mirror the color
+      if (path.direction) {
+        setConnectorOutput(connectors[path.sideB], path.color); // Mirror to sideB
+      } else {
+        setConnectorOutput(connectors[path.sideA], path.color); // Mirror to sideA
+      }
+    }
   }
 }
 

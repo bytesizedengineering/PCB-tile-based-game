@@ -1,7 +1,7 @@
 # PCB Tile Based Board Game 
 
 ![Project Image](assets/project-image.png)  
-*A brief one-liner describing the project.*  
+*Whoever completes the longest path wins! But beware of collisions!*  
 
 ## 🚀 Overview  
 When Zach is not knee-deep in circuits and code, you can probably find him around a table covered in board games. For a long time now, a little project has been brewing in the back of his mind, designing a board game from the ground up, but not just any board game. Zach wants to create a tile-based game where the tiles electronically interact with each other the moment they snap together. It was featured on the Digkey [YouTube channel](https://www.youtube.com/@digikey) in [this video](#).  

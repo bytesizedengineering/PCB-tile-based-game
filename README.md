@@ -1,6 +1,6 @@
 # PCB Tile Based Board Game 
 
-![Project Image](https://github.com/bytesizedengineering/PCB-tile-based-game/assets/project-image.png)  
+![Project Image](assets/project-image.png)  
 *A brief one-liner describing the project.*  
 
 ## 🚀 Overview  

@@ -1,10 +1,10 @@
 #include <tinyNeoPixel.h>
 
 // Uncomment only one of these to select the tile type
-//#define TILE_TYPE_AAA
+#define TILE_TYPE_AAA
 //#define TILE_TYPE_AOA
 //#define TILE_TYPE_OOO
-#define TILE_TYPE_SOS
+//#define TILE_TYPE_SOS
 //#define TILE_TYPE_SSA
 
 

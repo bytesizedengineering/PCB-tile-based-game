@@ -2,10 +2,14 @@
 
 // Uncomment only one of these to select the tile type
 //#define TILE_TYPE_AAA
-#define TILE_TYPE_AOA
+//#define TILE_TYPE_AOA
 //#define TILE_TYPE_OOO
 //#define TILE_TYPE_SOS
-//#define TILE_TYPE_SSA
+#define TILE_TYPE_SSA
+
+// Uncomment the following line to create a starting tile
+// Leave commented for all other standard tiles
+//#define TILE_TYPE_SARTING
 
 // Structures
 struct Connector {
@@ -67,10 +71,16 @@ void setup() {
 
   tile.begin();
 
-  tile.path1.pixelPath.fill(0x007F0000); tile.path1.pixelPath.show();
-  tile.path2.pixelPath.fill(0x00007F00); tile.path2.pixelPath.show();
-  tile.path3.pixelPath.fill(0x0000007F); tile.path3.pixelPath.show();
-  delay(1000);
+  #if defined (TILE_TYPE_SARTING)
+    tile.path1.color = 0x007F0000; // Red
+    tile.path2.color = 0x00007F00; // Green
+    tile.path3.color = 0x0000007F; // Blue
+
+    activateStartingPath(tile.path1);
+    activateStartingPath(tile.path2);
+    activateStartingPath(tile.path3);
+    while(true);
+  #endif
 }
 
 void loop() {  
@@ -89,31 +99,31 @@ void assignTileType(){
       {.sideA = 2, .sideB = 3, .ledPin = PIN_PB4, .numLEDs = 4},  // Adjacent J2 ↔ J3
       {.sideA = 4, .sideB = 5, .ledPin = PIN_PC2, .numLEDs = 4}   // Adjacent J4 ↔ J5
     };
-    #elif defined(TILE_TYPE_AOA)
+  #elif defined(TILE_TYPE_AOA)
     tile = {
       {.sideA = 1, .sideB = 6, .ledPin = PIN_PA7, .numLEDs = 4},  // Adjacent J1 ↔ J6
       {.sideA = 2, .sideB = 5, .ledPin = PIN_PB4, .numLEDs = 6},  // Opposite J2 ↔ J5
       {.sideA = 3, .sideB = 4, .ledPin = PIN_PC2, .numLEDs = 4}   // Adjacent J3 ↔ J4
     };
-    #elif defined(TILE_TYPE_OOO)
+  #elif defined(TILE_TYPE_OOO)
     tile = {
       {.sideA = 4, .sideB = 1, .ledPin = PIN_PB4, .numLEDs = 5},  // Opposite J1 ↔ J4
       {.sideA = 5, .sideB = 2, .ledPin = PIN_PC2, .numLEDs = 6},  // Opposite J2 ↔ J5
       {.sideA = 6, .sideB = 3, .ledPin = PIN_PA7, .numLEDs = 5}   // Opposite J3 ↔ J6
     };
-    #elif defined(TILE_TYPE_SOS)
+  #elif defined(TILE_TYPE_SOS)
     tile = {
       {.sideA = 1, .sideB = 3, .ledPin = PIN_PA7, .numLEDs = 4},  // Skip     J1 ↔ J3 
       {.sideA = 2, .sideB = 5, .ledPin = PIN_PB4, .numLEDs = 6},  // Opposite J2 ↔ J5
       {.sideA = 6, .sideB = 4, .ledPin = PIN_PC2, .numLEDs = 4}   // Skip     J6 ↔ J4 
     };
-    #elif defined(TILE_TYPE_SSA)
+  #elif defined(TILE_TYPE_SSA)
     tile = {
       {.sideA = 2, .sideB = 4, .ledPin = PIN_PB4, .numLEDs = 4},  // Skip     J2 ↔ J4  
       {.sideA = 3, .sideB = 5, .ledPin = PIN_PC2, .numLEDs = 5},  // Skip     J3 ↔ J5
       {.sideA = 1, .sideB = 6, .ledPin = PIN_PA7, .numLEDs = 4}   // Adjacent J1 ↔ J6
     };
-    #else
+  #else
     #error "No TILE_TYPE defined!"
   #endif
 }
@@ -191,12 +201,22 @@ void updatePath(Path& path, const Connector* connectors) {
     path.active = true;
   }
   else if (colorA && colorB) {
-    // Need to deal with this condition
-    // 
+    static bool toggle = false;
+    toggle = !toggle;
+    if (colorA == colorB) { // single player closed their loop      
+      if (toggle) path.pixelPath.fill(colorA);
+      else path.pixelPath.clear();
+    }
+    else { // two players' paths have collided
+      if (toggle) path.pixelPath.fill(colorA);
+      else path.pixelPath.fill(colorB);      
+    }
+    path.pixelPath.show();
   }
   else { // No color data is present on either side of path
     // Clear path and reset
-    path.pixelPath.clear(); path.pixelPath.show();    
+    path.pixelPath.clear(); path.pixelPath.show();
+    //path.color = 0;    
     path.animStep = 0;
     // Set both sides to input
     setConnectorInput(connectors[path.sideA]);
@@ -210,11 +230,9 @@ void updatePath(Path& path, const Connector* connectors) {
     path.animStep++; // Increment the number of LEDs to animate for the next go around
     if (path.animStep > path.numLEDs) {
       // Animation finished, now mirror the color
-      if (path.direction) {
-        setConnectorOutput(connectors[path.sideB], path.color); // Mirror to sideB
-      } else {
-        setConnectorOutput(connectors[path.sideA], path.color); // Mirror to sideA
-      }
+      if (path.direction) setConnectorOutput(connectors[path.sideB], path.color); // Mirror to sideB
+      else setConnectorOutput(connectors[path.sideA], path.color); // Mirror to sideA
+      //path.active = false;      
     }
   }
 }
@@ -239,6 +257,10 @@ void setConnectorInput(const Connector& conn) {
   pinMode(conn.pin_blue, INPUT_PULLUP);
 }
 
+void activateStartingPath(Path& path) {
+  path.pixelPath.fill(path.color);
+  path.pixelPath.show();
 
-
-
+  setConnectorOutput(connectors[path.sideA], path.color);
+  setConnectorOutput(connectors[path.sideB], path.color);
+}

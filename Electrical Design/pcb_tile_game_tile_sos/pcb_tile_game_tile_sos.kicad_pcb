@@ -1052,6 +1052,7 @@
 			(uuid "361a4729-be4a-4905-a098-d53f93381485")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1060,6 +1061,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/5359 Mag Connector (5-pin, Right Angle, Pins).step"
+			(offset
+				(xyz -1.4 -5.1 2.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
 			)
 		)
 	)
@@ -2630,6 +2642,7 @@
 			(uuid "cb389364-6c66-4a54-91e0-7e139aaec3b8")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2638,6 +2651,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/5359 Mag Connector (5-pin, Right Angle, Pads).step"
+			(offset
+				(xyz -1.4 -5.1 2.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
 			)
 		)
 	)
@@ -3074,7 +3098,7 @@
 		(descr "Through hole straight socket strip, 1x05, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x05 2.54mm single row")
 		(property "Reference" "J6"
-			(at 0 -2.77 -30)
+			(at 0 -2.77 150)
 			(layer "F.SilkS")
 			(uuid "497037a6-4a2e-41a5-9e6b-f1273c4fc58b")
 			(effects
@@ -3085,7 +3109,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Socket"
-			(at 0 12.93 -30)
+			(at 0 12.93 150)
 			(layer "F.Fab")
 			(uuid "014978f3-2fcb-4034-bf5b-d53d6091fa99")
 			(effects
@@ -3356,6 +3380,7 @@
 			(uuid "56153f37-bac0-451d-956a-f86db39931a2")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3364,6 +3389,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/5359 Mag Connector (5-pin, Right Angle, Pins).step"
+			(offset
+				(xyz -1.4 -5.1 2.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
 			)
 		)
 	)
@@ -4668,7 +4704,7 @@
 		(descr "Through hole straight socket strip, 1x05, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x05 2.54mm single row")
 		(property "Reference" "J4"
-			(at 0 -2.77 -150)
+			(at 0 -2.77 30)
 			(layer "F.SilkS")
 			(uuid "0169a2b7-49b2-43c3-9dd0-1699df480d20")
 			(effects
@@ -4679,7 +4715,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Socket"
-			(at 0 12.93 -150)
+			(at 0 12.93 30)
 			(layer "F.Fab")
 			(uuid "7a9335c6-a5c3-4d53-8362-b41e791c0109")
 			(effects
@@ -4884,7 +4920,7 @@
 			(uuid "461f0194-f16a-40b0-9bd8-1e844e555da2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 5.08 -60)
+			(at 0 5.08 120)
 			(layer "F.Fab")
 			(uuid "c5c495da-f417-4fa7-af66-ebf94eb9d7ec")
 			(effects
@@ -4950,6 +4986,7 @@
 			(uuid "a1cb77d7-abf7-4eb4-aa73-bd2d3d2532c6")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4958,6 +4995,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/5359 Mag Connector (5-pin, Right Angle, Pins).step"
+			(offset
+				(xyz -1.4 -5.1 2.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
 			)
 		)
 	)
@@ -5463,6 +5511,7 @@
 			(uuid "b133b745-9465-430d-ac0f-ae49c08bd75b")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5471,6 +5520,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/5359 Mag Connector (5-pin, Right Angle, Pads).step"
+			(offset
+				(xyz -1.4 -5.1 2.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
 			)
 		)
 	)
@@ -5705,7 +5765,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Pin"
-			(at 0 12.49 -90)
+			(at 0 12.49 90)
 			(layer "F.Fab")
 			(uuid "f10fac4a-a3ea-41dc-86c1-e79b3504a2db")
 			(effects
@@ -5976,14 +6036,26 @@
 			(uuid "f58da73a-e964-4106-94a6-9ff05825f4d2")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/5359 Mag Connector (5-pin, Right Angle, Pads).step"
+			(offset
+				(xyz -1.4 -5.1 2.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
 			)
 		)
 	)
@@ -7403,7 +7475,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -7414,7 +7486,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -7425,7 +7497,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -7853,7 +7925,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -7864,7 +7936,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -7908,7 +7980,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -8358,7 +8430,7 @@
 		)
 		(fp_arc
 			(start 0.794452 1.211902)
-			(mid 0.925124 1.229279)
+			(mid 0.925124 1.229278)
 			(end 1.046712 1.280204)
 			(stroke
 				(width 0.1)
@@ -8435,7 +8507,7 @@
 		)
 		(fp_arc
 			(start 1.04671 -1.856396)
-			(mid 1.63807 -1.792133)
+			(mid 1.638075 -1.792131)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -8446,7 +8518,7 @@
 		)
 		(fp_arc
 			(start 1.04671 -1.856396)
-			(mid 0.925123 -1.805473)
+			(mid 0.925122 -1.805472)
 			(end 0.794452 -1.788094)
 			(stroke
 				(width 0.1)
@@ -8819,7 +8891,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -8830,7 +8902,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -8841,7 +8913,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -9291,7 +9363,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -9302,7 +9374,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -9313,7 +9385,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -9763,7 +9835,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -9774,7 +9846,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -9785,7 +9857,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -10213,7 +10285,7 @@
 		)
 		(fp_arc
 			(start 0.794452 1.211902)
-			(mid 0.925123 1.229281)
+			(mid 0.925123 1.22928)
 			(end 1.046712 1.280202)
 			(stroke
 				(width 0.1)
@@ -10312,7 +10384,7 @@
 		)
 		(fp_arc
 			(start -1.749485 -1.207816)
-			(mid -1.712519 -1.102166)
+			(mid -1.712518 -1.102166)
 			(end -1.699999 -0.990938)
 			(stroke
 				(width 0.1)
@@ -11223,7 +11295,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -11267,7 +11339,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -11278,7 +11350,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -11629,7 +11701,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925124 -1.805471)
+			(mid 0.925123 -1.805471)
 			(end 0.794452 -1.788097)
 			(stroke
 				(width 0.1)
@@ -11640,7 +11712,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -12123,7 +12195,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -12134,7 +12206,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -12145,7 +12217,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -12595,7 +12667,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -12606,7 +12678,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -12617,7 +12689,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -13111,7 +13183,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)
@@ -13155,7 +13227,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -13166,7 +13238,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -13517,7 +13589,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 0.925123 -1.805472)
+			(mid 0.925123 -1.805473)
 			(end 0.794452 -1.788096)
 			(stroke
 				(width 0.1)
@@ -13528,7 +13600,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.856395)
-			(mid 1.63807 -1.792132)
+			(mid 1.638074 -1.79213)
 			(end 1.749484 -1.207815)
 			(stroke
 				(width 0.1)
@@ -13572,7 +13644,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.990938)
-			(mid 1.712521 -1.102165)
+			(mid 1.712519 -1.102166)
 			(end 1.749484 -1.207816)
 			(stroke
 				(width 0.1)

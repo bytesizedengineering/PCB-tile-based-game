@@ -507,7 +507,7 @@
       "plot": "sos.gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "pcb_tile_game_tile_sos.step",
       "svg": "",
       "vrml": ""
     },

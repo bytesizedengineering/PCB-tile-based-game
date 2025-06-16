@@ -62,6 +62,6 @@ This project is licensed under the **GNU General Public License v3.0**.
 You can read the full text in the [`LICENSE`](LICENSE) file or at [gnu.org](https://www.gnu.org/licenses/gpl-3.0.html).  
 
 ## ❤️ Support  
-- Found this helpful? Consider supporting me on [Patreon](https://www.patreon.com/ByteSizedEngineering).  
-- Follow me on [YouTube](), [Instagram](#), and [GitHub](https://github.com/bytesizedengineering).  
+- Found this helpful? Consider supporting me on [Patreon](https://www.patreon.com/ByteSizedEngineering) or [YouTube Memberships](https://www.youtube.com/@ByteSizedEngineering/join).  
+- Follow me on [YouTube](https://www.youtube.com/@ByteSizedEngineering), [Instagram](https://www.instagram.com/bytesizedengineering/), and [GitHub](https://github.com/bytesizedengineering). 
 

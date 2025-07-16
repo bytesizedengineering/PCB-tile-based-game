@@ -4,7 +4,7 @@
 *Whoever completes the longest path wins! But beware of collisions!*  
 
 ## 🚀 Overview  
-When Zach is not knee-deep in circuits and code, you can probably find him around a table covered in board games. For a long time now, a little project has been brewing in the back of his mind, designing a board game from the ground up, but not just any board game. Zach wants to create a tile-based game where the tiles electronically interact with each other the moment they snap together. It was featured on the Digkey [YouTube channel](https://www.youtube.com/@digikey) in [this video](#).  
+When Zach is not knee-deep in circuits and code, you can probably find him around a table covered in board games. For a long time now, a little project has been brewing in the back of his mind, designing a board game from the ground up, but not just any board game. Zach wants to create a tile-based game where the tiles electronically interact with each other the moment they snap together. It was featured on the Digkey [YouTube channel](https://www.youtube.com/@digikey) in [this video](https://youtu.be/TUmDfVxSnFg?si=vBeNglg9jUsEn66M).  
 
 ## 📂 Repository Structure  
 ```
@@ -55,7 +55,7 @@ You can upload code to the ATtiny3217 using the [Adafruit UPDI Friend](https://l
 
 
 ## 🎥 Video & More Info  
-📺 Watch the full build video: [YouTube Video](#)  
+📺 Watch the full build video: [YouTube Video](https://youtu.be/TUmDfVxSnFg?si=vBeNglg9jUsEn66M)  
 
 ## 📝 License  
 This project is licensed under the **GNU General Public License v3.0**.  
